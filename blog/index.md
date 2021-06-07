@@ -5,5 +5,5 @@
 
 # 开发日志
 
-[FHI-aims百万原子开发协作日志](https://wyjoutstanding.github.io/blog/)
+[FHI-aims百万原子开发协作日志](https://quantumict.github.io/QuantumICT/blog/fhi-aims_million_atoms_dev)
 

@@ -1,9 +1,6 @@
 ---
-layout: post
-title:  "FHI-aims百万原子开发协作日志"
-date:   2021-06-07 12:09:26 +0800
-tags:
-      - develop
+title: "FHI-aims百万原子开发协作日志"
+date: 2021-06-07 12:09:26 +0800
 ---
 
 # 开发约定

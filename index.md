@@ -13,6 +13,6 @@ Our papers.
 # Album
 Our activity.
 
-# Blog
-[FHI-aims百万原子开发协作日志](https://wyjoutstanding.github.io/wyj.github.io/blog/fhi-aims_million_atoms_dev)
+# [Blog](https://quantumict.github.io/QuantumICT/blog/)
+[FHI-aims百万原子开发协作日志](https://quantumict.github.io/QuantumICT/blog/fhi-aims_million_atoms_dev)
 
