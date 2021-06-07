@@ -13,6 +13,6 @@ Our papers.
 # Album
 Our activity.
 
-# 博文发布测试
-[阿俊的测试博文](https://wyjoutstanding.github.io/wyj.github.io/test)
+# Blog
+[FHI-aims百万原子开发协作日志](https://wyjoutstanding.github.io/wyj.github.io/blog/fhi-aims_million_atoms_dev)
 
