@@ -6,7 +6,7 @@
 - `dir_tab (3,n_centers_integrals, n_max_batch_size)`
   - 去掉
 - `dist_tab_sq (n_centers_integrals, n_max_batch_size)`
-  - 减小维度变为 `dist_tab_sq(n_centers_integrals)`  
+  - 减小维度变为 `dist_tab_sq(n_centers_integrals)`
   - 改为allocate分配内存  
 
 ## 精度对比  
