@@ -6,10 +6,9 @@
 - `dir_tab (3,n_centers_integrals, n_max_batch_size)`
   - 去掉
 - `dist_tab_sq (n_centers_integrals, n_max_batch_size)`
-  - 减小维度变为 `dist_tab_sq(n_centers_integrals)`
+  - 减小维度变为 `dist_tab_sq(n_centers_integrals)`  
 
-## 精度对比
-
+## 精度对比  
 |         | gidx - gidx' | gidx - lidx | gidx - lidx' |
 | :----   | :----:       | :----:      | :----:       | 
 | H2      | 0            | 1.33E-14    | 1.07E-14      |
