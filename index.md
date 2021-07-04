@@ -8,7 +8,7 @@ This about some news.
 Our team members.
 
 # Publication(https://quantumict.github.io/QuantumICT/Publication/)
-https://quantumict.github.io/QuantumICT/publication/shanghui_pub.html
+https://quantumict.github.io/QuantumICT/publication/publication.html
 
 # Album
 Our activity.
