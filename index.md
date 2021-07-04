@@ -7,7 +7,8 @@ This about some news.
 # Team
 Our team members.
 
-# [Publication](https://quantumict.github.io/QuantumICT/Publication/)
+# [Publication](https://quantumict.github.io/QuantumICT/publication/)
+Our publications.
 
 # Album
 Our activity.
