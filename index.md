@@ -9,7 +9,7 @@ We are focuing on:
 
 # Team
 
-## Professor
+## Principal Investigator
 
 [Honghui Shang](http://people.ucas.edu.cn/~shanghui)（mail: shanghonghui@ict.ac.cn）
 
@@ -24,8 +24,9 @@ Lei Xu, Zhiqian Xu, Haiwen Luo, Yangju Wu, Leilei Zhu, Yingxiang Gao, Renyu Liu.
 [Our colorful life and memorable moments](https://quantumict.github.io/QuantumICT/album/index).
 
 # Blog
-[Our blogs include tutorials and development logs](https://quantumict.github.io/QuantumICT/blog/) .
+[Our blogs include tutorials and development logs](https://quantumict.github.io/QuantumICT/blog/).
 
 # Group Meeting
 
 [Our group meeting records](https://quantumict.github.io/QuantumICT/group_meeting).
+
