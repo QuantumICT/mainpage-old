@@ -1,5 +1,5 @@
 # Home
-We are a team to accelerate science discovery at HPC.
+We are a team to accelerate science discovery at HPC.  
 
 We are focuing on:
 
