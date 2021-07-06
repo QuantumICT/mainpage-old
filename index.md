@@ -1,11 +1,15 @@
 # Home
-This about our brief introduction.
+We are a team to do science at HPC.  In order to accelerate discovery sicence challenges, 
+HPC is used to combine the modeling and simulation. 
 
-# News
-This about some news.
+We are focuing on:
+(1) High-performance computation
+(2) First-principles method development and implementation
+(3) Kinetic Monte Carlo method development and implementation
+
 
 # Team
-Our team members.
+Lei Xu, Zhiqian Xu, Haiwen Luo, Yangju Wu,  Leilei Zhu, Yingxiang Gao, Renyu Liu 
 
 # [Publication](https://quantumict.github.io/QuantumICT/publication/)
 Our publications.
