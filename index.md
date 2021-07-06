@@ -1,6 +1,5 @@
 # Home
-We are a team to do science at HPC.  In order to accelerate discovery sicence challenges, 
-HPC is used to combine the modeling and simulation. 
+We are a team to accelerate science discovery at HPC.  
 
 We are focuing on:
 (1) High-performance computation
