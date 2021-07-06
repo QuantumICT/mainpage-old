@@ -3,9 +3,9 @@ We are a team to accelerate science discovery at HPC.
 
 We are focuing on:
 
-1. High-performance computation;
-2. First-principles method development and implementation;
-3. Kinetic Monte Carlo method development and implementation.
+- High-performance computation;
+- First-principles method development and implementation;
+- Kinetic Monte Carlo method development and implementation.
 
 # Team
 
@@ -24,8 +24,8 @@ Lei Xu, Zhiqian Xu, Haiwen Luo, Yangju Wu, Leilei Zhu, Yingxiang Gao, Renyu Liu.
 [Our colorful life and memorable moments](https://quantumict.github.io/QuantumICT/album/index).
 
 # Blog
-[Our blogs](https://quantumict.github.io/QuantumICT/blog/) include tutorials and development logs.
+[Our blogs include tutorials and development logs](https://quantumict.github.io/QuantumICT/blog/) .
 
 # Group Meeting
 
-Our group meeting records.
+[Our group meeting records](https://quantumict.github.io/QuantumICT/group_meeting).
