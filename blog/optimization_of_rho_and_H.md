@@ -1,4 +1,6 @@
-# rho和H小kernel优化经验
+# rho和H优化经验
+
+### 罗海文 2021.09
 
 ### 用Fortran写从核函数
 
@@ -46,7 +48,7 @@ subroutine func(param)
 end subroutine func
 ```
 
-### rho的优化
+### 小kernel rho的优化
 
 ##### 计算rho的流程(c语言描述)
 
@@ -117,31 +119,30 @@ for(int i=0;i<n_centers_integrals;i++)
 
 |       | 优化前 | 优化后 |
 | ----- | ------ | ------ |
-| 64核  | 3.380  | 2.220  |
-| 512核 | 27.350 | 17.630 |
+| 512核 | 3.380  | 2.220  |
+| 64核  | 27.350 | 17.630 |
 
-### H的优化
+### 小kernelH的优化
 
 ##### 计算H的流程(C语言描述)
 
 ```c
 for(int i_my_batch=1;i_my_batch<n_my_batches_work;i_my_batch++)
 {
-    tab_atom_centered_coords();//21亿->4亿
-    collect_batch_centers_p2();//0.17亿
-    for(int i_index=0;i_index<batches_work_size(i_my_batch);i_index++)//21亿->34亿
+    tab_atom_centered_coords();
+    collect_batch_centers_p2();
+    for(int i_index=0;i_index<batches_work_size(i_my_batch);i_index++)
     {
         prune_radial_basis_p2();
         tab_local_geometry_p2();
-        tab_trigonom_p0();//
+        tab_trigonom_p0();
         tab_wave_ylm_p0();
         evaluate_radial_functions_p0();
         evaluate_waves_p2();
         evaluate_xc_DFPT();
     }
     evaluate_first_order_H_polar_reduce_memory();
-    //matrix_ddot();//8千8百万->一千五百万
-    prune_density_matrix_sparse_from_dense();//15亿->1.2亿
+    prune_density_matrix_sparse_from_dense();
 }
 ```
 
@@ -203,10 +204,97 @@ call dgemm("N","T",n_compute_c,n_compute_c,n_points,1.d0,contract,n_compute_c,&
 
 |       | 优化前 | 优化后 |
 | ----- | ------ | ------ |
-| 64核  | 4.86   | 3.15   |
-| 512核 | 35.28  | 21.10  |
+| 512核 | 4.86   | 3.15   |
+| 64核  | 35.28  | 21.10  |
 
+### 大kernel rho优化
 
+##### 热点分析
+
+|            | tab_atom | prune_density | i_index_loop | dgemm  | matrix_ddot | collect_batch |
+| ---------- | -------- | ------------- | ------------ | ------ | ----------- | ------------- |
+| 占比       | 31%      | 25%           | 31%          | 12%    | 1%          | 0.2%          |
+| 时钟周期数 | 40亿     | 4亿           | 17.5亿       | 0.26亿 | 0.017亿     | 0.25亿        |
+
+##### tab_atom_centered_coords
+
+优化方法：和小kernel一样，也是打表，把离散访存替换成连续访存之后使用dma操作访问内存。
+
+| 优化前 | 优化后 | 加速比 |
+| ------ | ------ | ------ |
+| 40亿   | 4亿    | 10     |
+
+##### prune_density_matrix_sparse_polar_reduce_memory
+
+优化方法：对称矩阵可以减少一半访存量，同时离散访存可以通过数据预取把gld操作转换为更快的dma操作，充分利用带宽。
+
+| 优化前 | 优化后 | 加速比 |
+| ------ | ------ | ------ |
+| 4亿    | 3亿    | 1.3    |
+
+##### 大kernel rho最后的优化结果
+
+|       | 优化前 | 优化后 |
+| ----- | ------ | ------ |
+| 512核 | 3.51   | 2.32   |
+| 64核  | 22.31  | 15.23  |
+
+### 
+
+### 大kernel H优化
+
+##### 热点分析
+
+| tab_atom_centered_coords | 10%  |
+| ------------------------ | ---- |
+| prune_radial_basis       | 4%   |
+| tab_local_geometry       |      |
+| tab_trigonom             |      |
+| tab_wave_ylm             |      |
+| evaluate_radial_function |      |
+| evaluate_waves           |      |
+| pz_lda                   |      |
+| dgemm+ddot               |      |
+| pre_reduction            |      |
+| reduction                | 82%  |
+
+### 大kernel和小kernel的比较
+
+##### rho
+
+|       | 大kernel | 小kernel | 原始   |
+| ----- | -------- | -------- | ------ |
+| 64核  | 15.11    | 17.61    | 239.60 |
+| 512核 | 2.50     | 2.24     | 31.45  |
+
+##### rho各个部分的比较（512核大kernel负载不均衡所以目前只比较64核）
+
+|             | tab_atom | prune_density | i_index_loop | dgemm | matrix_ddot | collect_batch |
+| ----------- | -------- | ------------- | ------------ | ----- | ----------- | ------------- |
+| 64_小kernel | 34亿     | 82亿          | 171亿        | 1.0亿 | 0.15亿      | 1.4亿         |
+| 64_大kernel | 25亿     | 64亿          | 211亿        | 3.6亿 | 0.24亿      | 4.8亿         |
+
+##### 总结
+
+之前的结论是小kernel比大kernel快一点，如上表所示，大kernel是2.50秒，小kernel是2.24秒。但是测试64核的结果表明大kernel快一点，后来我测试了大kernel每一个从核运行的时间，发现原因是从核负载不均衡导致的。
+
+##### H
+
+|       | 大kernel | 小kernel | 原始   |
+| ----- | -------- | -------- | ------ |
+| 64核  | 85.92    | 21.10    | 131.02 |
+| 512核 | 13.63    | 3.15     | 17.47  |
+
+##### H各个部分的比较
+
+|             | tab_atom | update first_order_H | i_index_loop | dgemm+ddot | collect_batch |
+| ----------- | -------- | -------------------- | ------------ | ---------- | ------------- |
+| 64_小kernel | 34亿     | 9.8亿                | 263亿        | 9.8亿      | 1.4亿         |
+| 64_大kernel | 25亿     | 1372亿               | 90.8亿       | 3.7亿      | 2.4亿         |
+
+##### 总结
+
+update first_order_H这部分是64个从核同时更新first_order_H,所以会有数据冲突。除了update first_order_H这个部分，大kernel中每个部分的运行时间都比小kernel要好，所以如果大kernel能使用更有效的方法去update first_order_H，那使用大kernel计算H就会有意义。目前想到了两种方法，一种是用细粒度的锁，一种是让某几个从核专门来update first_order_H。
 
 ### 一些失败的尝试
 
@@ -223,6 +311,3 @@ i_index_loop和prune_density_matrix_sparse_polar_reduce_memory之间是没有数
 ### 总结
 
 神威海洋之光是严重主核和从核之间带宽受限的，所以除非是特别密集的计算，都不能很好的发挥神威海洋之光从核的计算能力，对于不是特别计算密集的kernel来说，都可以视为访存受限的，所以说即使这个kernel全是访存，进行优化也不是没有意义的。计算密集型的kernel从核加速效果最好，仅有连续访存或近似连续访存的kernel从核加速效果一般，加速比在2-12之间，有大量离散访存的kernel利用从核反而有减速效果。
-
-
-
