@@ -1,5 +1,5 @@
-#block2安装
-##准备工作
+# block2安装
+## 准备工作
 下载block2
 ```
 git clone https://github.com/block-hczhai/block2-preview
@@ -16,7 +16,7 @@ module add cmake/3.7.0
 ```
 module add gcc/8.3.0-wzm
 ```
-##开始安装
+## 开始安装
 可以在 <block2路径>/setup.py 的cmake_args变量中配置cmake参数，具体参数可以在README.md中查看。我增加了开启mpi的参数。
 
 执行命令编译并创建whl包
