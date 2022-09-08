@@ -14,8 +14,7 @@ We are focuing on:
 [Honghui Shang](http://people.ucas.edu.cn/~shanghui)（mail: shanghonghui@ict.ac.cn）
 
 ## Graduate Student
-
-Lei Xu, Zhiqian Xu, Haiwen Luo, Yangju Wu, Leilei Zhu, Yingxiang Gao, Renyu Liu.
+Zhiqian Xu, Haiwen Luo, Yangju Wu, Leilei Zhu, Yingxiang Gao, Renyu Liu.
 
 # Publication
 [Our latest publications](https://quantumict.github.io/QuantumICT/publication/publications).
