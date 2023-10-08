@@ -30,6 +30,118 @@
 }
 </pre>
 
+<a name=Wuzhikun2023"></a><pre>
+    @article{Wuzhikun2023,
+        abstract = {We have proposed, for the first time, an OpenCL implementation for the all-electron density-functional perturbation theory (DFPT) calculations in FHI-aims, which can effectively compute all its time-consuming simulation stages, i.e., the real-space integration of the response density, the Poisson solver for the calculation of the electrostatic potential, and the response Hamiltonian matrix, by utilizing various heterogeneous accelerators. Furthermore, to fully exploit the massively parallel computing capabilities, we have performed a series of general-purpose graphics processing unit (GPGPU)-targeted optimizations that significantly improved the execution efficiency by reducing register requirements, branch divergence, and memory transactions. Evaluations on the Sugon supercomputer have shown that notable speedups can be achieved across various materials.},
+        author = {Wu, Zhikun and Shang, Honghui and Wu, Yangjun and Zhang, Zhongcheng and Liu, Ying and Zhang, Yuyang and Ouyang, Yucheng and Cui, Huimin and Feng, Xiaobing},
+        doi = {10.3389/fchem.2023.1156891},
+        issn = {2296-2646},
+        journal = {Frontiers in Chemistry},
+        keywords = {DFPT,GPU,OpenCL,dfpt,gpu,heterogeneous,opencl,optimization},
+        month = {may},
+        number = {May},
+        pages = {1--15},
+        title = {{OpenCL-accelerated first-principles calculations of all-electron quantum perturbations on HPC resources}},
+        url = {https://www.frontiersin.org/articles/10.3389/fchem.2023.1156891/full},
+        volume = {11},
+        year = {2023}
+        }
+    </pre>
+
+    <a name=Xu2023"></a><pre>
+        @article{Xu2023,
+            author = {Xu, Lei and Shang, Honghui and Chen, Xin and Zhang, Yunquan and Wang, Lifang and Gao, Xingyu and Song, Haifeng},
+            doi = {10.1109/TPDS.2023.3269625},
+            journal = {IEEE Transactions on Parallel and Distributed Systems},
+            number = {7},
+            pages = {1997--2010},
+            publisher = {IEEE},
+            title = {{Redesigning OpenKMC for Multi-Component Trillion-Atom Simulations on the New Sunway Supercomputer}},
+            volume = {34},
+            year = {2023}
+            }
+        </pre>   
+        
+
+    <a name=Ma2023"></a><pre>
+        @article{Ma2023,
+            abstract = {Exploring the potential applications of quantum computers in material design and drug discovery is attracting more and more attention after quantum advantage has been demonstrated using Gaussian boson sampling. However, quantum resource requirements in material and (bio)molecular simulations are far beyond the capacity of near-term quantum devices. In this work, multiscale quantum computing is proposed for quantum simulations of complex systems by integrating multiple computational methods at different scales of resolution. In this framework, most computational methods can be implemented in an efficient way on classical computers, leaving the critical portion of the computation to quantum computers. The simulation scale of quantum computing strongly depends on available quantum resources. As a near-term scheme, we integrate adaptive variational quantum eigensolver algorithms, second-order M{\o}ller-Plesset perturbation theory and Hartree-Fock theory within the framework of the many-body expansion fragmentation approach. This new algorithm is applied to model systems consisting of hundreds of orbitals with decent accuracy on the classical simulator. This work should encourage further studies on quantum computing for solving practical material and biochemistry problems.},
+            author = {Ma, Huan and Liu, Jie and Shang, Honghui and Fan, Yi and Li, Zhenyu and Yang, Jinlong},
+            doi = {10.1039/d2sc06875c},
+            issn = {20416539},
+            journal = {Chemical Science},
+            pages = {3190--3205},
+            publisher = {Royal Society of Chemistry},
+            title = {{Multiscale quantum algorithms for quantum chemistry}},
+            year = {2023}
+            }
+        </pre>
+        
+        <a name=S2023"></a><pre> 
+        @article{Shang2023,
+            abstract = {Electron-phonon (e-ph) interaction plays a crucial role in determining many physical properties of the materials, such as the superconducting transition temperature, the relaxation time and mean free path of hot carriers, the temperature dependence of the electronic structure, and the formation of the vibrational polaritons. In the past two decades, the calculations of e-ph properties from first-principles become possible, especially, the renormalization of electronic structures due to e-ph interaction can be evaluated, providing greater insight into the quantum zero-point motion effect and the temperature dependence behavior. In this perspective, we briefly overview the basic theory, outline the computational challenges and describe the recent progresses in this field, as well as future directions and opportunities of the e-ph coupling calculations.},
+            author = {Shang, Honghui and Yang, Jinlong},
+            doi = {10.1063/5.0140724},
+            issn = {0021-9606},
+            journal = {The Journal of Chemical Physics},
+            publisher = {AIP Publishing, LLC},
+            title = {{The electron-phonon renormalization in the electronic structure calculation: Fundamentals, current status, and challenges}},
+            url = {https://doi.org/10.1063/5.0140724},
+            volume = {130901},
+            year = {2023}
+            }
+        </pre>
+
+        <a name=wu2023nnqs"></a><pre> 
+        @inproceedings{wu2023nnqs,
+            author    = {Yangjun Wu and Chu Guo and Yi Fan and Pengyu Zhou and Honghui Shang},
+            title     = {{NNQS-Transformer: an Efficient and Scalable Neural Network Quantum States Approach for Ab initio Quantum Chemistry}},
+            booktitle = {The International Conference for High Performance Computing, Networking, Storage and Analysis},
+            year      = {2023},
+            month     = {November},
+            address   = {Denver, CO, USA},
+            publisher = {ACM},
+            location  = {Denver, CO, USA},
+            numpages = {12},
+            url       = {https://doi.org/10.1145/3581784.3607061},
+            series = {SC '23}
+        }
+    </pre>
+
+        <a name=10.1145/3581784.3607085"></a><pre> 
+        @article{10.1145/3581784.3607085,
+            title = {Portable and Scalable Quantum Perturbation Simulations on Exascale Supercomputers},
+            language = {en},
+            author = {Wu, Zhikun and Wu, Yangjun and Liu, Ying and Shang, Honghui and Gao, Yingxiang and Zhang, Zhongcheng and Zhang, Yuyang and Long, Yingchi and Feng, Xiaobing and Cui, Huimin},
+            year = {2023},
+                url = {https://doi.org/10.1145/3581784.3607085},
+                doi = {10.1145/3581784.3607085},
+                abstract = {Quantum perturbation theory is pivotal in determining the critical physical properties of materials. The first-principles computations of these properties have yielded profound and quantitative insights in diverse domains of chemistry and physics.In this work, we propose a portable and scalable OpenCL implementation for quantum perturbation theory, which can be generalized across various high-performance computing (HPC) systems. Optimal portability is realized through the utilization of a cross-platform unified interface and a collection of performance-portable heterogeneous optimizations. Exceptional scalability is attained by addressing major constraints on memory and communication, employing a locality-enhancing task mapping strategy and a packed hierarchical collective communication scheme.  Experiments on two advanced supercomputers demonstrate that our implementation exhibits remarkably performance on various material systems, scaling the system to 200,000 atoms with all-electron precision. This research enables all-electron quantum perturbation simulations on substantially larger molecular scales, with a potentially significant impact on progress in material sciences.},
+                booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+                keywords = {Quantum mechanics, Perturbation theory, All-electron, Scalability, Heterogeneous many-core supercomputers, Biological systems},
+                series = {SC '23}
+        }
+    </pre>
+
+
+        <a name=Shang2023a"></a><pre> 
+        @article{Shang2023a,
+            abstract = {Quantum computing is moving beyond its early stage and seeking for commercial applications in chemical and biomedical sciences. In the current noisy intermediate-scale quantum computing era, the quantum resource is too scarce to support these explorations. Therefore, it is valuable to emulate quantum computing on classical computers for developing quantum algorithms and validating quantum hardware. However, existing simulators mostly suffer from the memory bottleneck so developing the approaches for large-scale quantum chemistry calculations remains challenging. Here we demonstrate a high-performance and massively parallel variational quantum eigensolver (VQE) simulator based on matrix product states, combined with embedding theory for solving large-scale quantum computing emulation for quantum chemistry on HPC platforms. We apply this method to study the torsional barrier of ethane and the quantification of the protein–ligand interactions. Our largest simulation reaches 1000 qubits, and a performance of 216.9 PFLOP/s is achieved on a new Sunway supercomputer, which sets the state-of-the-art for quantum computing emulation for quantum chemistry.},
+            author = {Shang, Honghui and Fan, Yi and Shen, Li and Guo, Chu and Liu, Jie and Duan, Xiaohui and Li, Fang and Li, Zhenyu},
+            doi = {10.1038/s41534-023-00696-7},
+            issn = {2056-6387},
+            journal = {npj Quantum Information},
+            month = {apr},
+            number = {1},
+            pages = {33},
+            publisher = {Springer US},
+            title = {{Towards practical and massively parallel quantum computing emulation for quantum chemistry}},
+            url = {https://www.nature.com/articles/s41534-023-00696-7},
+            volume = {9},
+            year = {2023}
+            }
+        </pre>
+
 <a name="Xu2022"></a><pre>
 @article{Wu2023,
   abstract = {The restricted Boltzmann machine (RBM) has been successfully applied to solve
