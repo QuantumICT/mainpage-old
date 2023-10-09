@@ -19,7 +19,7 @@ Zhiqian Xu, Haiwen Luo, Yangju Wu, Leilei Zhu, Yingxiang Gao, Renyu Liu.
 # Publication
 [Our latest publications](https://quantumict.github.io/QuantumICT/publication/pub_other.html)
 
-[Old version](https://quantumict.github.io/QuantumICT/publication/publications).
+<!-- [Old version](https://quantumict.github.io/QuantumICT/publication/publications). -->
 
 # Album
 [Our colorful life and memorable moments](https://quantumict.github.io/QuantumICT/album/index).
