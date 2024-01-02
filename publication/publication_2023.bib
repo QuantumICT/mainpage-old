@@ -1,0 +1,194 @@
+@article{Zhu2023,
+author = {Zhu, Leilei and Zeng, Xiongzhi and Shang, Honghui and Li, Zhenyu},
+doi = {10.1021/acs.jpcc.3c05140},
+issn = {1932-7447},
+journal = {The Journal of Physical Chemistry C},
+month = {dec},
+number = {48},
+pages = {23359--23369},
+title = {{First-Principles Analysis of the Raman Spectra of 2D Material YbOCl}},
+url = {https://pubs.acs.org/doi/10.1021/acs.jpcc.3c05140},
+volume = {127},
+year = {2023}
+}
+
+
+@article{Guo2023,
+abstract = {Quantum Computing is believed to be the ultimate solution for quantum chemistry problems. Before the advent of large-scale, fully fault-tolerant quantum computers, the variational quantum eigensolver (VQE) is a promising heuristic quantum algorithm to solve real world quantum chemistry problems on near-term noisy quantum computers. Here we propose a highly parallelizable classical simulator for VQE based on the matrix product state representation of quantum state, which significantly extend the simulation range of the existing simulators. Our simulator seamlessly integrates the quantum circuit evolution into the classical auto-differentiation framework, thus the gradients could be computed efficiently similar to the classical deep neural network, with a scaling that is independent of the number of variational parameters. As applications, we use our simulator to study commonly used small molecules such as HF, HCl, LiH and H 2 O, as well as larger molecules CO 2 , BeH 2 and H 4 with up to 40 qubits. The favorable scaling of our simulator against the number of qubits and the number of parameters could make it an ideal testing ground for near-term quantum algorithms and a perfect benchmarking baseline for oncoming large scale VQE experiments on noisy quantum computers.},
+archivePrefix = {arXiv},
+arxivId = {2211.07983v4},
+author = {Guo, Chu and Fan, Yi and Xu, Zhiqian and Shang, Honghui},
+doi = {10.22331/q-2023-12-04-1192},
+eprint = {2211.07983v4},
+issn = {2521-327X},
+journal = {Quantum},
+month = {dec},
+pages = {1192},
+title = {{Differentiable matrix product states for simulating variational quantum computational chemistry}},
+url = {https://doi.org/10.22331/q-2023-12-04-1192 https://quantum-journal.org/papers/q-2023-12-04-1192/},
+volume = {7},
+year = {2023}
+}
+
+
+
+
+@inproceedings{SC23_aims_dfpt,
+author = {Wu, Zhikun and Wu, Yangjun and Liu, Ying and Shang, Honghui and Gao, Yingxiang and Zhang, Zhongcheng and Zhang, Yuyang and Long, Yingchi and Feng, Xiaobing and Cui, Huimin},
+title = {Portable and  Scalable All-Electron Quantum Perturbation Simulations on Exascale Supercomputers},
+year = {2023},
+isbn = {9798400701092},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3581784.3607085},
+doi = {10.1145/3581784.3607085},
+booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+articleno = {40},
+numpages = {13},
+keywords = {all-electron, scalability, quantum mechanics, perturbation theory, heterogeneous many-core supercomputers, biological systems},
+location = {Denver, CO, USA},
+series = {SC '23}
+}
+
+
+@inproceedings{SC23_nnqs,
+author = {Wu, Yangjun and Guo, Chu and Fan, Yi and Zhou, Pengyu and Shang, Honghui},
+title = {NNQS-Transformer: An Efficient and Scalable Neural Network Quantum States Approach for Ab Initio Quantum Chemistry},
+year = {2023},
+isbn = {9798400701092},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3581784.3607061},
+doi = {10.1145/3581784.3607061},
+abstract = {Neural network quantum state (NNQS) has emerged as a promising candidate for quantum many-body problems, but its practical applications are often hindered by the high cost of sampling and local energy calculation. We develop a high-performance NNQS method for ab initio electronic structure calculations. The major innovations include: (1) A transformer based architecture as the quantum wave function ansatz; (2) A data-centric parallelization scheme for the variational Monte Carlo (VMC) algorithm which preserves data locality and well adapts for different computing architectures; (3) A parallel batch sampling strategy which reduces the sampling cost and achieves good load balance; (4) A parallel local energy evaluation scheme which is both memory and computationally efficient; (5) Study of real chemical systems demonstrates both the superior accuracy of our method compared to state-of-the-art and the strong and weak scalability for large molecular systems with up to 120 spin orbitals.},
+booktitle = {Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+articleno = {42},
+numpages = {13},
+keywords = {many-body schr\"{o}dinger equation, neural network quantum state, quantum chemistry, autoregressive sampling, transformer based architecture},
+location = {Denver, CO, USA},
+series = {SC '23}
+}
+
+
+
+@article{Xuzhiqian_CPC_2023,
+title = {MPS-VQE: A variational quantum computational chemistry simulator with matrix product states},
+journal = {Computer Physics Communications},
+volume = {294},
+pages = {108897},
+year = {2024},
+issn = {0010-4655},
+doi = {https://doi.org/10.1016/j.cpc.2023.108897},
+url = {https://www.sciencedirect.com/science/article/pii/S0010465523002424},
+author = {Zhiqian Xu and Yi Fan and Chu Guo and Honghui Shang},
+keywords = {Quantum computing, Variational quantum eigensolver, Matrix product state, Quantum chemistry, Parallel scalability},
+abstract = {Quantum computing is attracting more and more attention in material and biological science. In the noisy intermediate-scale quantum (NISQ) computing era, the variational quantum eigensolver (VQE) is expected as an effective method to solve quantum chemistry problems which has potential quantum advantage. Classically simulating quantum algorithms plays a critical role in algorithmic development and the validation of noisy quantum devices before large-scale, fully fault-tolerant quantum computers are developed. However, most existing simulators are based on the state vector or density matrix representation of the quantum state which is faced with the memory bottleneck due to the exponential growth of memory requirement as the number of qubits increases. In this work, we present a VQE simulator based on the matrix product states (MPS) method from quantum many-body physics, and a detailed study of our MPS-VQE simulator in quantum chemistry applications. The memory requirement of MPS-VQE grows only polynomially and we demonstrate that accurate results can be obtained despite the truncation of the smallest singular values during the algorithm. A distributed parallelization scheme is also presented for massively parallel computer systems, and different implementations of the parallelization scheme based on the Julia language are benchmarked which demonstrate the efficiency and scalability of our method. Our method could open a new avenue towards large-scale classical simulation of quantum computational chemistry.}
+}
+
+
+
+
+
+@article{Qin2023,
+abstract = {The NAO2GTO scheme provides an efficient way to evaluate the electron repulsion integrals (ERIs) over numerical atomic orbitals (NAOs) with auxiliary Gaussian-type orbitals (GTOs). However, the NAO2GTO fitting will significantly impact the accuracy and convergence of hybrid functional calculations. To address this issue, here we propose to use the fitted orbitals as a new numerical basis to properly handle the mismatch between NAOs and fitted GTOs. We present an efficient and linear-scaling implementation of analytical gradients of Hartree-Fock exchange (HFX) energy for periodic HSE06 calculations with fitted NAOs in the HONPAS package. In our implementation, the ERIs and their derivatives for HFX matrix and forces are evaluated analytically with the auxiliary GTOs, while other terms are calculated using numerically discretized GTOs. Several integral screening techniques are employed to reduce the number of required ERI derivatives. We benchmark the accuracy and efficiency of our implementation and demonstrate that our results of lattice constants, bulk moduli, and band gaps of several typical semiconductors are in good agreement with the experimental values. We also show that the calculation of HFX forces based on a master-worker dynamic parallel scheme has a very high efficiency and scales linearly with respect to system size. Finally, we study the geometry optimization and polaron formation due to an excess electron in rutile TiO 2 by means of HSE06 calculations to further validate the applicability of our implementation.},
+author = {Qin, Xinming and Shang, Honghui and Yang, Jinlong},
+doi = {10.3389/fchem.2023.1232425},
+issn = {2296-2646},
+journal = {Frontiers in Chemistry},
+keywords = {Hartree-Fock exchange,NAO2GTO,atomic forces,electron repulsion integral derivatives,fi tted orbitals,fitted orbitals,hartree-fock exchange,integral screening,linear scaling,nao2gto},
+month = {jul},
+number = {July},
+pages = {1--14},
+title = {{Efficient implementation of analytical gradients for periodic hybrid functional calculations within fitted numerical atomic orbitals from NAO2GTO}},
+url = {https://www.frontiersin.org/articles/10.3389/fchem.2023.1232425/full},
+volume = {11},
+year = {2023}
+}
+
+
+
+@article{Xu2023,
+author = {Xu, Lei and Shang, Honghui and Chen, Xin and Zhang, Yunquan and Wang, Lifang and Gao, Xingyu and Song, Haifeng},
+doi = {10.1109/TPDS.2023.3269625},
+journal = {IEEE Transactions on Parallel and Distributed Systems},
+number = {7},
+pages = {1997--2010},
+publisher = {IEEE},
+title = {{Redesigning OpenKMC for Multi-Component Trillion-Atom Simulations on the New Sunway Supercomputer}},
+volume = {34},
+year = {2023}
+}
+
+
+@article{Wuzhikun2023,
+abstract = {We have proposed, for the first time, an OpenCL implementation for the all-electron density-functional perturbation theory (DFPT) calculations in FHI-aims, which can effectively compute all its time-consuming simulation stages, i.e., the real-space integration of the response density, the Poisson solver for the calculation of the electrostatic potential, and the response Hamiltonian matrix, by utilizing various heterogeneous accelerators. Furthermore, to fully exploit the massively parallel computing capabilities, we have performed a series of general-purpose graphics processing unit (GPGPU)-targeted optimizations that significantly improved the execution efficiency by reducing register requirements, branch divergence, and memory transactions. Evaluations on the Sugon supercomputer have shown that notable speedups can be achieved across various materials.},
+author = {Wu, Zhikun and Shang, Honghui and Wu, Yangjun and Zhang, Zhongcheng and Liu, Ying and Zhang, Yuyang and Ouyang, Yucheng and Cui, Huimin and Feng, Xiaobing},
+doi = {10.3389/fchem.2023.1156891},
+issn = {2296-2646},
+journal = {Frontiers in Chemistry},
+keywords = {DFPT,GPU,OpenCL,dfpt,gpu,heterogeneous,opencl,optimization},
+month = {may},
+number = {May},
+pages = {1--15},
+title = {{OpenCL-accelerated first-principles calculations of all-electron quantum perturbations on HPC resources}},
+url = {https://www.frontiersin.org/articles/10.3389/fchem.2023.1156891/full},
+volume = {11},
+year = {2023}
+}
+
+
+@article{Wu2023,
+abstract = {The restricted Boltzmann machine (RBM) has recently been demonstrated as a useful tool to solve the quantum many-body problems. In this work we propose tanh-FCN, which is a single-layer fully connected neural network adapted from RBM, to study ab initio quantum chemistry problems. Our contribution is two-fold: (1) our neural network only uses real numbers to represent the real electronic wave function, while we obtain comparable precision to RBM for various prototypical molecules; (2) we show that the knowledge of the Hartree-Fock reference state can be used to systematically accelerate the convergence of the variational Monte Carlo algorithm as well as to increase the precision of the final energy.},
+author = {Wu, Yangjun and Xu, Xiansong and Poletti, Dario and Fan, Yi and Guo, Chu and Shang, Honghui},
+doi = {10.3390/math11061417},
+journal = {Mathematics},
+keywords = {neural network,quantum chemistry,variational monte carlo},
+number = {6},
+pages = {1417},
+title = {{A Real Neural Network State for Quantum Chemistry}},
+volume = {11},
+year = {2023}
+}
+@article{Ma2023,
+abstract = {Exploring the potential applications of quantum computers in material design and drug discovery is attracting more and more attention after quantum advantage has been demonstrated using Gaussian boson sampling. However, quantum resource requirements in material and (bio)molecular simulations are far beyond the capacity of near-term quantum devices. In this work, multiscale quantum computing is proposed for quantum simulations of complex systems by integrating multiple computational methods at different scales of resolution. In this framework, most computational methods can be implemented in an efficient way on classical computers, leaving the critical portion of the computation to quantum computers. The simulation scale of quantum computing strongly depends on available quantum resources. As a near-term scheme, we integrate adaptive variational quantum eigensolver algorithms, second-order M{\o}ller-Plesset perturbation theory and Hartree-Fock theory within the framework of the many-body expansion fragmentation approach. This new algorithm is applied to model systems consisting of hundreds of orbitals with decent accuracy on the classical simulator. This work should encourage further studies on quantum computing for solving practical material and biochemistry problems.},
+author = {Ma, Huan and Liu, Jie and Shang, Honghui and Fan, Yi and Li, Zhenyu and Yang, Jinlong},
+doi = {10.1039/d2sc06875c},
+issn = {20416539},
+journal = {Chemical Science},
+pages = {3190--3205},
+publisher = {Royal Society of Chemistry},
+title = {{Multiscale quantum algorithms for quantum chemistry}},
+year = {2023}
+}
+@article{Shang2023,
+abstract = {Electron-phonon (e-ph) interaction plays a crucial role in determining many physical properties of the materials, such as the superconducting transition temperature, the relaxation time and mean free path of hot carriers, the temperature dependence of the electronic structure, and the formation of the vibrational polaritons. In the past two decades, the calculations of e-ph properties from first-principles become possible, especially, the renormalization of electronic structures due to e-ph interaction can be evaluated, providing greater insight into the quantum zero-point motion effect and the temperature dependence behavior. In this perspective, we briefly overview the basic theory, outline the computational challenges and describe the recent progresses in this field, as well as future directions and opportunities of the e-ph coupling calculations.},
+author = {Shang, Honghui and Yang, Jinlong},
+doi = {10.1063/5.0140724},
+issn = {0021-9606},
+journal = {The Journal of Chemical Physics},
+publisher = {AIP Publishing, LLC},
+title = {{The electron-phonon renormalization in the electronic structure calculation: Fundamentals, current status, and challenges}},
+url = {https://doi.org/10.1063/5.0140724},
+volume = {130901},
+year = {2023}
+}
+@article{Shang2023a,
+abstract = {Quantum computing is moving beyond its early stage and seeking for commercial applications in chemical and biomedical sciences. In the current noisy intermediate-scale quantum computing era, the quantum resource is too scarce to support these explorations. Therefore, it is valuable to emulate quantum computing on classical computers for developing quantum algorithms and validating quantum hardware. However, existing simulators mostly suffer from the memory bottleneck so developing the approaches for large-scale quantum chemistry calculations remains challenging. Here we demonstrate a high-performance and massively parallel variational quantum eigensolver (VQE) simulator based on matrix product states, combined with embedding theory for solving large-scale quantum computing emulation for quantum chemistry on HPC platforms. We apply this method to study the torsional barrier of ethane and the quantification of the protein–ligand interactions. Our largest simulation reaches 1000 qubits, and a performance of 216.9 PFLOP/s is achieved on a new Sunway supercomputer, which sets the state-of-the-art for quantum computing emulation for quantum chemistry.},
+author = {Shang, Honghui and Fan, Yi and Shen, Li and Guo, Chu and Liu, Jie and Duan, Xiaohui and Li, Fang and Li, Zhenyu},
+doi = {10.1038/s41534-023-00696-7},
+issn = {2056-6387},
+journal = {npj Quantum Information},
+month = {apr},
+number = {1},
+pages = {33},
+publisher = {Springer US},
+title = {{Towards practical and massively parallel quantum computing emulation for quantum chemistry}},
+url = {https://www.nature.com/articles/s41534-023-00696-7},
+volume = {9},
+year = {2023}
+}
+
+
+
+
+
