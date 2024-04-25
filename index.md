@@ -11,10 +11,14 @@ We are focuing on:
 
 ## Principal Investigator
 
-[Honghui Shang](http://people.ucas.edu.cn/~shanghui)（mail: shanghonghui@ict.ac.cn）
+[Honghui Shang](http://www.hfnl.ustc.edu.cn/detail?id=21014)（mail: shh@ustc.edu.cn）
+https://faculty.ustc.edu.cn/shanghonghui/en/index.htm
 
-## Graduate Student
-Zhiqian Xu, Haiwen Luo, Yangju Wu, Leilei Zhu, Yingxiang Gao, Renyu Liu.
+## Current Group Members 
+Bowen Zhao, Daiyou Xie, Jiexuan Zhou, Pengyu Zhou, Zhiqian Xu, Yangju Wu, Leilei Zhu, Yingxiang Gao.
+
+## Previous Group Members
+Haiwen Luo (National Supercomputer Center in Wuxi)
 
 # Publication
 [Our latest publications](https://quantumict.github.io/QuantumICT/publication/pub_other.html)
@@ -27,6 +31,5 @@ Zhiqian Xu, Haiwen Luo, Yangju Wu, Leilei Zhu, Yingxiang Gao, Renyu Liu.
 # Blog
 [Our blogs include tutorials and development logs](https://quantumict.github.io/QuantumICT/blog/).
 
-# Group Meeting
-
-[Our group meeting records](https://quantumict.github.io/QuantumICT/group_meeting).
+<!-- # Group Meeting -->
+<!-- [Our group meeting records](https://quantumict.github.io/QuantumICT/group_meeting).-->
