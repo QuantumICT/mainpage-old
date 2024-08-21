@@ -21,15 +21,15 @@ Bowen Zhao, Daiyou Xie, Jiexuan Zhou, Pengyu Zhou, Zhiqian Xu, Yangju Wu, Leilei
 Haiwen Luo (National Supercomputer Center in Wuxi)
 
 # Publication
-[Our latest publications](https://quantumict.github.io/QuantumICT/publication/pub_other.html)
+[Our latest publications](/publication/pub_other.html)
 
 <!-- [Old version](https://quantumict.github.io/QuantumICT/publication/publications). -->
 
 # Album
-[Our colorful life and memorable moments](https://quantumict.github.io/QuantumICT/album/index).
+[Our colorful life and memorable moments](/album/index).
 
 # Blog
-[Our blogs include tutorials and development logs](https://quantumict.github.io/QuantumICT/blog/).
+[Our blogs include tutorials and development logs](/blog/).
 
 <!-- # Group Meeting -->
 <!-- [Our group meeting records](https://quantumict.github.io/QuantumICT/group_meeting).-->
