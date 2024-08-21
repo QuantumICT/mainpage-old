@@ -11,14 +11,23 @@ We are focuing on:
 
 ## Principal Investigator
 
-[Honghui Shang](http://www.hfnl.ustc.edu.cn/detail?id=21014)（mail: shh@ustc.edu.cn）
-https://faculty.ustc.edu.cn/shanghonghui/en/index.htm
+[Honghui Shang](http://www.hfnl.ustc.edu.cn/detail?id=21014)（mail: shh@ustc.edu.cn）  
+https://faculty.ustc.edu.cn/shanghonghui/en/index.htm  
 
 ## Current Group Members 
-Bowen Zhao, Daiyou Xie, Jiexuan Zhou, Pengyu Zhou, Zhiqian Xu, Yangju Wu, Leilei Zhu, Yingxiang Gao.
+Bowen Kan (Doctor Student)  
+Bowen Zhao (Doctor Student)  
+Daiyou Xie (Doctor Student)  
+Jiexuan Zhou (Master Student)  
+Leilei Zhu (Doctor Student)  
+Pengyu Zhou (Master Student)  
+Yingxiang Gao (Undergraduate Student)  
+[Zhiqian Xu](/member/zhiqianxu) (Doctor Student)  
+[Zhuozhao Xia](https://xiazhuozhao.com) (Master Student)  
 
 ## Previous Group Members
-Haiwen Luo (National Supercomputer Center in Wuxi)
+Haiwen Luo (Master, 2023) National Supercomputer Center in Wuxi  
+Yangju Wu (Master, 2024) ByteDance Group
 
 # Publication
 [Our latest publications](/publication/pub_other.html)
