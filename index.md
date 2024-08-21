@@ -27,7 +27,7 @@ Yingxiang Gao (Undergraduate Student)
 
 ## Previous Group Members
 Haiwen Luo (Master, 2023) National Supercomputer Center in Wuxi  
-Yangju Wu (Master, 2024) ByteDance Group
+Yangjun Wu (Master, 2024) ByteDance Group
 
 # Publication
 [Our latest publications](/publication/pub_other.html)
