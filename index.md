@@ -16,7 +16,7 @@ https://faculty.ustc.edu.cn/shanghonghui/en/index.htm
 
 ## Current Group Members 
 Bowen Kan (Doctor Student)  
-Bowen Zhao (Doctor Student)  
+Bowen Zhao (Master Student)  
 Daiyou Xie (Doctor Student)  
 Jiexuan Zhou (Master Student)  
 Leilei Zhu (Doctor Student)  
