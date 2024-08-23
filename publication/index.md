@@ -1,4 +1,4 @@
 # Publication
-[Latest publications](/publication/publication.html)
+[Latest publications](/mainpage-old/publication/publication.html)
 
-[Other latest publications](/publication/pub_other.html)
+[Other latest publications](/mainpage-old/publication/pub_other.html)
