@@ -10,7 +10,7 @@
 locale                   : "en-US"
 title                    : "QuantumICT"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "QuantumICT group"
 description              : &description "Our research group, QuantumICT at HFNL & USTC."
 url                      : https://quantumict.github.io/QuantumICTpage # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
