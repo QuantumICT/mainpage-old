@@ -1,13 +1,12 @@
 ---
 permalink: /
-title: "QuantumICT Group Main Page"
+title: "QuantumICT Research Group"
 author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-# Home
 We are a team to accelerate science discovery at HPC.  
 
 We are focuing on:
@@ -20,8 +19,8 @@ We are focuing on:
 
 ## Principal Investigator
 
-[Honghui Shang](http://www.hfnl.ustc.edu.cn/detail?id=21014)（mail: shh@ustc.edu.cn）  
-https://faculty.ustc.edu.cn/shanghonghui/en/index.htm  
+[Honghui Shang](http://www.hfnl.ustc.edu.cn/detail?id=21014) mail: shh@ustc.edu.cn <sub>[another link](https://faculty.ustc.edu.cn/shanghonghui/en/index.htm)</sub>  
+   
 
 ## Current Group Members 
 [Bowen Kan](/member/bowenkan) (Doctor Student)  
